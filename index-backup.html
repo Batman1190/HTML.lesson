@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fun Learning for Kids! 🚀</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🌟 HTML Adventure 🌟</h1>
+            <p class="subtitle">Learn to Build Websites!</p>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <p class="progress-text">Progress: <span id="progressText">0%</span></p>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="lesson-nav">
+            <button class="nav-btn active" data-lesson="1">Lesson 1</button>
+            <button class="nav-btn" data-lesson="2">Lesson 2</button>
+            <button class="nav-btn" data-lesson="3">Lesson 3</button>
+            <button class="nav-btn" data-lesson="4">Lesson 4</button>
+            <button class="nav-btn" data-lesson="5">Lesson 5</button>
+        </nav>
+
+        <!-- Lessons Container -->
+        <div class="lessons-container">
+            
+            <!-- Lesson 1: What is HTML? -->
+            <div class="lesson active" id="lesson1">
+                <h2>🎨 Lesson 1: What is HTML?</h2>
+                <div class="explanation">
+                    <p>HTML is like <strong>building blocks</strong> for websites! Just like LEGO bricks, we use HTML to build different parts of a website.</p>
+                    <p>HTML stands for <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage. But don't worry about the big name - just remember it helps us build websites! 🏗️</p>
+                    <div class="fun-fact">
+                        <strong>🎈 Fun Fact:</strong> Every website you see on the internet uses HTML!
+                    </div>
+                </div>
+                
+                <div class="exercise">
+                    <h3>🎯 Exercise 1: Your First HTML!</h3>
+                    <p>Type this code exactly as you see it:</p>
+                    <div class="code-example">
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    </div>
+                    <button class="hint-btn" onclick="showHint(1)">💡 Need Help?</button>
+                    <div class="hint" id="hint1">
+                        <strong>Hint:</strong> Make sure to type the &lt; and &gt; symbols. The words go between them!
+                    </div>
+                    <textarea class="code-input" id="input1" placeholder="Type your code here..."></textarea>
+                    <button class="check-btn" onclick="checkAnswer(1)">Check Answer ✓</button>
+                    <div class="feedback" id="feedback1"></div>
+                    <div class="preview" id="preview1"></div>
+                </div>
+            </div>
+
+            <!-- Lesson 2: HTML Tags -->
+            <div class="lesson" id="lesson2">
+                <h2>🏷️ Lesson 2: HTML Tags</h2>
+                <div class="explanation">
+                    <p>HTML tags are like <strong>labels</strong> that tell the computer what each part is!</p>
+                    <p>Most tags come in <strong>pairs</strong>:</p>
+                    <ul>
+                        <li>An <strong>opening tag</strong>: <code>&lt;p&gt;</code></li>
+                        <li>Your content in the middle</li>
+                        <li>A <strong>closing tag</strong>: <code>&lt;/p&gt;</code> (notice the /)</li>
+                    </ul>
+                    <div class="fun-fact">
+                        <strong>🎈 Fun Fact:</strong> Tags are like sandwiches - they have a top and bottom with yummy content in between!
+                    </div>
+                </div>
+                
+                <div class="exercise">
+                    <h3>🎯 Exercise 2: Make a Paragraph!</h3>
+                    <p>Create a paragraph that says: "I am learning HTML!"</p>
+                    <div class="code-example">
+                        <code>&lt;p&gt;Your text here&lt;/p&gt;</code>
+                    </div>
+                    <button class="hint-btn" onclick="showHint(2)">💡 Need Help?</button>
+                    <div class="hint" id="hint2">
+                        <strong>Hint:</strong> Use &lt;p&gt; to start and &lt;/p&gt; to end. Put your sentence in between!
+                    </div>
+                    <textarea class="code-input" id="input2" placeholder="Type your code here..."></textarea>
+                    <button class="check-btn" onclick="checkAnswer(2)">Check Answer ✓</button>
+                    <div class="feedback" id="feedback2"></div>
+                    <div class="preview" id="preview2"></div>
+                </div>
+            </div>
+
+            <!-- Lesson 3: Headings -->
+            <div class="lesson" id="lesson3">
+                <h2>📏 Lesson 3: Headings - Big and Small!</h2>
+                <div class="explanation">
+                    <p>Headings are like <strong>titles</strong> in a book. They help organize your webpage!</p>
+                    <p>HTML has 6 sizes of headings:</p>
+                    <ul>
+                        <li><code>&lt;h1&gt;</code> - The BIGGEST! 🐘</li>
+                        <li><code>&lt;h2&gt;</code> - A bit smaller 🐕</li>
+                        <li><code>&lt;h3&gt;</code> - Medium size 🐈</li>
+                        <li><code>&lt;h4&gt;</code> - Getting smaller 🐁</li>
+                        <li><code>&lt;h5&gt;</code> - Very small 🐜</li>
+                        <li><code>&lt;h6&gt;</code> - The smallest 🦗</li>
+                    </ul>
+                    <div class="fun-fact">
+                        <strong>🎈 Fun Fact:</strong> h1 is like the title of a story, and h2 is like chapter names!
+                    </div>
+                </div>
+                
+                <div class="exercise">
+                    <h3>🎯 Exercise 3: Create a Big Heading!</h3>
+                    <p>Create an h2 heading that says: "My Awesome Website"</p>
+                    <button class="hint-btn" onclick="showHint(3)">💡 Need Help?</button>
+                    <div class="hint" id="hint3">
+                        <strong>Hint:</strong> Use &lt;h2&gt; to start and &lt;/h2&gt; to end. Don't forget the closing tag!
+                    </div>
+                    <textarea class="code-input" id="input3" placeholder="Type your code here..."></textarea>
+                    <button class="check-btn" onclick="checkAnswer(3)">Check Answer ✓</button>
+                    <div class="feedback" id="feedback3"></div>
+                    <div class="preview" id="preview3"></div>
+                </div>
+            </div>
+
+            <!-- Lesson 4: Lists -->
+            <div class="lesson" id="lesson4">
+                <h2>📝 Lesson 4: Making Lists!</h2>
+                <div class="explanation">
+                    <p>Lists help you organize things, like your favorite toys or foods! 🍕🍦🍪</p>
+                    <p>There are two types of lists:</p>
+                    <ul>
+                        <li><strong>Unordered Lists</strong> (with bullet points): <code>&lt;ul&gt;</code></li>
+                        <li><strong>Ordered Lists</strong> (with numbers): <code>&lt;ol&gt;</code></li>
+                    </ul>
+                    <p>Each item in a list uses: <code>&lt;li&gt;</code> (li means "list item")</p>
+                    <div class="example-box">
+                        <strong>Example:</strong>
+                        <pre>&lt;ul&gt;
+  &lt;li&gt;Apples&lt;/li&gt;
+  &lt;li&gt;Bananas&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                    </div>
+                </div>
+                
+                <div class="exercise">
+                    <h3>🎯 Exercise 4: Make a List!</h3>
+                    <p>Create an unordered list with two items: "Dogs" and "Cats"</p>
+                    <button class="hint-btn" onclick="showHint(4)">💡 Need Help?</button>
+                    <div class="hint" id="hint4">
+                        <strong>Hint:</strong> Start with &lt;ul&gt;, then add two &lt;li&gt; items, and end with &lt;/ul&gt;!
+                    </div>
+                    <textarea class="code-input" id="input4" placeholder="Type your code here..."></textarea>
+                    <button class="check-btn" onclick="checkAnswer(4)">Check Answer ✓</button>
+                    <div class="feedback" id="feedback4"></div>
+                    <div class="preview" id="preview4"></div>
+                </div>
+            </div>
+
+            <!-- Lesson 5: Images -->
+            <div class="lesson" id="lesson5">
+                <h2>🖼️ Lesson 5: Adding Pictures!</h2>
+                <div class="explanation">
+                    <p>Images make websites fun and colorful! 🌈</p>
+                    <p>The image tag is special - it doesn't need a closing tag!</p>
+                    <p>We use: <code>&lt;img src="picture.jpg" alt="description"&gt;</code></p>
+                    <ul>
+                        <li><strong>src</strong> tells where the picture is</li>
+                        <li><strong>alt</strong> is a description (helpful if the picture doesn't load!)</li>
+                    </ul>
+                    <div class="fun-fact">
+                        <strong>🎈 Fun Fact:</strong> The img tag is self-closing - it doesn't need a partner tag!
+                    </div>
+                </div>
+                
+                <div class="exercise">
+                    <h3>🎯 Exercise 5: Add an Image!</h3>
+                    <p>Create an image tag with src="https://via.placeholder.com/150" and alt="A placeholder image"</p>
+                    <button class="hint-btn" onclick="showHint(5)">💡 Need Help?</button>
+                    <div class="hint" id="hint5">
+                        <strong>Hint:</strong> Remember: &lt;img src="URL" alt="description"&gt; - no closing tag needed!
+                    </div>
+                    <textarea class="code-input" id="input5" placeholder="Type your code here..."></textarea>
+                    <button class="check-btn" onclick="checkAnswer(5)">Check Answer ✓</button>
+                    <div class="feedback" id="feedback5"></div>
+                    <div class="preview" id="preview5"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-btns">
+            <button class="prev-btn" onclick="previousLesson()">⬅️ Previous</button>
+            <button class="next-btn" onclick="nextLesson()">Next ➡️</button>
+        </div>
+
+        <!-- Celebration Modal -->
+        <div class="modal" id="celebrationModal">
+            <div class="modal-content">
+                <h2>🎉 Awesome Job! 🎉</h2>
+                <p>You got it right!</p>
+                <button onclick="closeModal()">Continue Learning! 🚀</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Keep practicing and have fun! 🌟 You're doing great! 🌟</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
